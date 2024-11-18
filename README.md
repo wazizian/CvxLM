@@ -7,8 +7,7 @@ This repository contains code for finetuning Large Language Models (LLMs) specif
 The project focuses on:
 - Finetuning various LLM models (SmolLM2, Qwen2.5-Coder) on CVXPY-specific code
 - Using datasets from The Stack and GitHub Code containing optimization problems
-- Implementing efficient training with LoRA and quantization techniques
-
+  
 ## Models
 
 Currently supported models:
@@ -37,14 +36,6 @@ python train.py --config-name qwencoder1.5B # For Qwen2.5-Coder-1.5B
 python inference.py
 ```
 
-## Features
-
-- Streaming dataset creation with filtering for CVXPY-related content
-- Efficient finetuning using LoRA and 4-bit quantization
-- Configurable training parameters via YAML configs
-- Model merging and saving capabilities
-- Inference script for comparing model performances
-
 ## Requirements
 
 - PyTorch
@@ -69,6 +60,3 @@ python inference.py
 - Add CVXPY example notebooks for demonstration and testing
 - Switch to instruction-tuned base models for better performance
 
-## License
-
-This project is open-source and available under the MIT License.
