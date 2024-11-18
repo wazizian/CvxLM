@@ -1,0 +1,25 @@
+model_id: "Qwen/Qwen2.5-Coder-1.5B"
+
+dataset_path: "dataset_hf_datasets_python_cvxpy"
+dataset_text_field: "content"
+
+max_seq_length: 2048
+max_steps: 20000
+micro_batch_size: 1
+gradient_accumulation_steps: 4
+weight_decay: 0.01
+bf16: true
+gradient_checkpointing: true
+
+use_bnb: true
+attention_dropout: 0.1
+learning_rate: 0.0001
+lr_scheduler_type: "cosine"
+warmup_steps: 1000
+seed: 0
+output_dir: "finetune_qwen2.5_1.5B_cvxpy"
+num_proc: null
+save_merged_model: true
+push_to_hub: false
+repo_id: ""
+
